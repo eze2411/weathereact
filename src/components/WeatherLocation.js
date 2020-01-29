@@ -6,7 +6,7 @@ class WeatherLocation extends React.Component {
     render() {
         return (
             <div>
-                <Location city={'Buenos Aires'}></Location>
+                <Location city={'Rio de Janeiro'}></Location>
                 <WeatherData></WeatherData>
             </div>
         );

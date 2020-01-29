@@ -2,8 +2,12 @@ import React from 'react';
 
 class WeatherExtraInfo extends React.Component {
     render() {
+        const { humidity, wind } = this.props;
         return (
-            <div>WeatherExtraInfo</div>
+            <div>
+                <span>{`${humidity} % - `}</span>
+                <span>{`${wind} wind`}</span>
+            </div>
         );
     }
 }

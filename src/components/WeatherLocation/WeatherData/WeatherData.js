@@ -8,12 +8,13 @@ import {
     RAIN,
     SNOW,
     WINDY
-} from './../constants/weathers';
+} from './../../../constants/weathers';
+import './styles.css'
 
 class WeatherData extends React.Component {
     render() {
         return (
-            <div>
+            <div className="weatherDataCont">
                 <WeatherTemperature
                     temperature={20}
                     weatherState={SUN}

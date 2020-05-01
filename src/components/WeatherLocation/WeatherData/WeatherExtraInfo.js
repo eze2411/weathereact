@@ -7,7 +7,7 @@ class WeatherExtraInfo extends React.Component {
         const { humidity, wind } = this.props;
         return (
             <div className="weatherExtraInfoCont">
-                <span className="extraInfoText">{`Humidity: ${humidity} % - `}</span>
+                <span className="extraInfoText">{`Humidity: ${humidity} %`}</span>
                 <span className="extraInfoText">{`Winds: ${wind}`}</span>
             </div>
         );

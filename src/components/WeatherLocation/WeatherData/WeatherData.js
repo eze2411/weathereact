@@ -10,7 +10,7 @@ class WeatherData extends React.Component {
         return (
             <div className="weatherDataCont">
                 <WeatherTemperature
-                    temperature={temperature}
+                        temperature={temperature}
                     weatherState={weatherState}
                 />
                 <WeatherExtraInfo humidity={humidity} wind={wind} />
@@ -21,7 +21,7 @@ class WeatherData extends React.Component {
 
 WeatherData.propTypes = {
     data: PropTypes.shape({
-        temperature: PropTypes.number.isRequired,
+        temperature: PropTypes.string.isRequired,
         weatherState: PropTypes.string.isRequired,
         humidity: PropTypes.number.isRequired,
         wind: PropTypes.string.isRequired

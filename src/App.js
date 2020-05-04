@@ -20,7 +20,7 @@ class App extends React.Component {
 
     constructor() {
         super();
-        this.state = { city: 'Nueva ciudad' };
+        this.state = { city: null };
     }
     handleSelectedLocation = city => {
         this.setState({city});
@@ -35,7 +35,7 @@ class App extends React.Component {
                     <AppBar position="sticky">
                         <Toolbar>
                             <Typography variant="subtitle1" color="inherit">
-                                Weathereact
+                                Weathereact App
                             </Typography>
                         </Toolbar>
                     </AppBar>
@@ -50,7 +50,7 @@ class App extends React.Component {
                     <Col xs={12} md={6}>
                         <Paper elevation={4}>
                             <div className="details">
-                                <ForecastExtended city={city} />
+                                { city && <ForecastExtended city={city} /> }
                             </div>
                         </Paper>
                     </Col>

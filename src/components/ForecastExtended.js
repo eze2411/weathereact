@@ -46,17 +46,7 @@ class ForecastExtended extends React.Component {
 
 
     updateCity = city => {
-        const url_forecast = `${url_base_forecast}?q=${city}&appid=${api_key}`;
-        fetch(url_forecast).then(
-            data => (data.json())
-        ).then(
-            weather_data => {
-                console.log(weather_data);
-                const forecastData = transformForecast(weather_data);
-                this.setState({ forecastData });
-                console.log(this.state);
-            }
-        );
+
     };
 
 
